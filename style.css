@@ -89,11 +89,15 @@ h1 {
     margin: auto;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 580px) {
     .earth_image {
-        width: 400px;
-        height: 400px;
+        height: 100%;
+        width: 100%;
+        margin: auto;
     }
+
+    
+
 }
 .first_container p {
     margin: 35px 35px 0 40px;
@@ -135,7 +139,6 @@ h2 {
 
 #second {
     padding: 20px;
-    right: 0%;
 }
 
 .second-second {
@@ -144,31 +147,48 @@ h2 {
 }
 
 .nature-first {
-    width: 300px;
+    width: 350px;
     border-radius: 20px;
     box-shadow: 0 6px 8px #00000084
 }
 
 .nature-second {
-    width: 300px;
+    width: 50%;
     border-radius: 20px;
     box-shadow: 0 6px 8px #00000084
 }
 
-@media screen and (max-width: 800px) {
-    .second-container {
-        display: flex;
-        flex-direction: column;
+@media screen and (max-width: 726px) {
+
+    .second-first {
+        margin: auto;
+        flex-flow: row wrap;
+        margin-bottom: 100px;
+        padding: auto;
+        justify-content: flex-start;
+    }
+
+    .second-second {
+        margin: auto;
+        flex-flow: row wrap;
+        padding: auto;
+    }
+
+    .second-container{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        flex-flow: row wrap;
+    }
+
+    .nature-first {
+        width: 70%;
         margin: auto;
     }
 
-    nature {
-        height: 100px;
-        width: 500px;
-    }
-
-    #second {
-        padding: 20px;
+    .nature-second {
+        width: 70%;
+        margin: auto;
     }
 
 }
@@ -197,9 +217,18 @@ h2 {
     justify-content: space-around;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:970px) {
     .lower_container_blocks {
         width: 500px;
+        flex-flow: row wrap;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .lower_container_blocks {
+        height: 100%;
+        width: 100%;
+        margin: auto;
         flex-flow: row wrap;
     }
 }
