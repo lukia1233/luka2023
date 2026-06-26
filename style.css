@@ -1,7 +1,18 @@
-*{
+    *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.6em;
+    color: rgb(0, 0, 0);
 }
 
 body {
@@ -73,6 +84,20 @@ h1 {
     box-shadow: 0 6px 8px #5e5e5e84;
     margin-bottom: 60px;
 
+}
+
+.first_container_bottom {
+    font-size: 1.2em;
+    margin: 35px 35px 0 40px;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 6%;
+    align-items: center;
+}
+
+.first_container_bottom h2 {
+    margin: 20px 0 10px 10; 
+    padding-left: 2%;
 }
 
 .first_container h1 {
@@ -240,7 +265,7 @@ h2 {
 .lower_container_block {
     margin: 50px;
     background-color: rgb(218, 244, 245);
-    padding: 20px;
+    padding: 20px; 
     border-radius: 20px;
     box-shadow: 0 4px 8px #94949484;
 }
@@ -313,4 +338,101 @@ footer {
     text-transform: uppercase;
     opacity: .55;
     font-weight: 200;
+}
+
+/* Contact Section Styles */
+.contact-container {
+    background-color: rgb(171, 206, 207);
+    padding: 60px 35px;
+    margin: 35px;
+    border-radius: 30px;
+    box-shadow: 0 6px 8px #5e5e5e84;
+    margin-top: 100px;
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    width: 100%;
+}
+
+.contact-info h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    background-color: rgb(218, 244, 245);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #94949484;
+}
+
+.contact-item i {
+    font-size: 2em;
+    color: rgb(98, 132, 130);
+    margin-right: 20px;
+    min-width: 40px;
+    text-align: center;
+}
+
+.contact-item div {
+    flex: 1;
+}
+
+.contact-item p {
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.contact-item p strong {
+    color: rgb(98, 132, 130);
+    font-size: 1.1em;
+}
+
+.contact-item a {
+    color: rgb(98, 132, 130);
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: rgb(171, 206, 207);
+}
+
+@media screen and (max-width: 726px) {
+    .contact-container {
+        margin: 20px;
+        padding: 30px;
+    }
+
+    .contact-container h1 {
+        font-size: 2.5em;
+    }
+
+    .contact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-item i {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }
